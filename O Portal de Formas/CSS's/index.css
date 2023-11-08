@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300&display=swap');
+
+* {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+table {
+    display: flex;
+}
+
+table button {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btns {
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    margin-left: 160px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;    
+    align-items: center;
+    border-color: rgb(189, 189, 189);
+    font-weight: bolder;
+    border-radius: 16px;
+    background-color: rgb(189, 189, 189);
+    
+}
+
+button:hover {
+    transition: .3s;
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+
+.ult {
+    width: 944px;
+    margin-left: 11px;
+}
+
+table a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+    color: white;
+    font-weight: bolder;
+    margin-top: 40px;
+    padding: 40px;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .list {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+footer .list {
+    color: black;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+footer .list a:hover {
+    color: black;
+}
+
+footer ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.p_ué {
+    font-size: 28px;
+    margin-bottom: 16px;
+}

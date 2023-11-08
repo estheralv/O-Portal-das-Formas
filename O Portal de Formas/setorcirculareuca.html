@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/setorcirculareuca.css">
+        <title>Cálculo - Setor Circular em um Círculo Aninhado</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">SETOR CIRCULAR EM UM CÍRCULO ANINHADO</h1></a>
+
+            <div class="text-box">
+
+                <div class="text">
+                    <br>Um setor circular em um círculo aninhado é uma figura geométrica que surge quando um 
+                    círculo menor está localizado dentro de um círculo maior. Este setor é uma parte da 
+                    região entre os dois círculos e compartilha a mesma origem no centro. Aqui estão 
+                    informações detalhadas sobre um setor circular em um círculo aninhado:<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Definição:</span><br>
+                    <br>- Um setor circular em um círculo aninhado é uma área delimitada por um arco de círculo 
+                    e dois raios que partem do centro do círculo maior e conectam-se ao ponto onde o arco 
+                    do círculo se encontra com o círculo menor.<br>
+                    <br><img src="IMGS/setor-circular.webp" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Elementos Principais:</span><br>
+                    <br>- O círculo maior é chamado de círculo externo, e o círculo menor é o círculo interno.
+                    <br>- O arco de círculo que forma o setor é uma parte da circunferência do círculo externo.
+                    <br>- Os dois raios que delimitam o setor conectam o centro do círculo externo ao ponto 
+                    de interseção com o círculo interno.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Medida do Ângulo do Setor:</span><br>
+                    <br>- A medida do ângulo do setor é determinada pela relação entre o comprimento do arco 
+                    de círculo e o raio do círculo externo. Isso pode ser calculado usando a fórmula: Ângulo do 
+                    Setor = (Comprimento do Arco / Raio do Círculo Externo).<br><br>
+                </div>
+                
+                <div class="text">
+                    <br><span>Área do Setor:</span><br>
+                    <br>- A área do setor é calculada com base na medida do ângulo do setor e o raio do círculo 
+                    externo. A fórmula é: Área do Setor = (Ângulo do Setor / 360°) × π × (Raio do Círculo Externo)².
+                    <br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Perímetro do Setor:</span><br>
+                    <br>- O perímetro do setor é a soma do comprimento do arco de círculo e a soma dos comprimentos 
+                    dos dois raios que delimitam o setor.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Usos Práticos:</span><br>
+                    <br>- Setores circulares em círculos aninhados são comuns em engenharia, design, arquitetura e gastronomia, 
+                    onde podem representar áreas de interesse, como jardins circulares dentro de pátios maiores ou 
+                    áreas de plantio em um campo agrícola ou para um exemplo mais cotidiano e simples, em uma pizza.<br>
+                    <br><img src="IMGS/setor-circular-exemplo.webp" alt="" class="" style="width: 350px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="textc">
+                    <br><span>Relações com Outras Figuras Geométricas:</span><br>
+                    <br>- Os setores circulares também podem ser vistos como partes de um círculo maior. Eles podem ser usados em 
+                    cálculos de áreas e ângulos em geometria.<br><br>
+                </div>
+
+            </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Setor Circular em um Círculo Aninhado!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> (0 / 360°) * π * r² </span></h2>
+
+    </header>
+
+        <section>
+
+            <div class="angulo">
+                <label for="angulo" class="section-label">Ângulo :</label>
+                <input type="number" class="section-control" id="angulo" name="angulo" placeholder="" value="" required>
+            </div>
+
+            <div class="raio">
+                <label for="raio" class="section-label">Raio :</label>
+                <input type="number" class="section-control" id="raio" name="raio" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var angulo = document.getElementById("angulo").value;
+                    var raio = document.getElementById("raio").value;
+                    var raio2 = raio * raio;
+                    var area = ((angulo / 360) * Math.PI) * raio2;
+                    document.getElementById("result").innerHTML = "A área do setor circular é: " + area;
+
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer> 
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

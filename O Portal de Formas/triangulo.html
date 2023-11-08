@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/triangulo.css">
+        <title>Cálculo - Triângulo</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">TRIÂNGULO</h1></a>
+
+        <div class="text-box">
+
+            <div class="text">
+                <br>Um triângulo é uma figura geométrica composta por três lados e três ângulos. 
+                Existem várias propriedades e características importantes associadas aos 
+                triângulos, a seguir:<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Definição e Classificação:</span><br>
+                <br>- Um triângulo é uma figura plana que possui três lados, três vértices e três 
+                ângulos internos.
+                <br>- Os triângulos podem ser classificados de acordo com as medidas de seus ângulos 
+                e lados. Alguns tipos comuns incluem triângulos equiláteros (todos os lados e 
+                ângulos iguais), triângulos isósceles (dois lados e ângulos iguais), e triângulos 
+                escalenos (todos os lados e ângulos diferentes).<br>
+                <br><img src="IMGS/triangulo.webp" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Propriedades Básicas:</span><br>
+                <br>- A soma dos ângulos internos de qualquer triângulo é sempre igual a 180 graus.
+                <br>- A soma dos comprimentos de quaisquer dois lados de um triângulo é sempre maior 
+                que o comprimento do terceiro lado, o que é conhecido como a desigualdade triangular.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Área e Perímetro:</span><br>
+                <br>- A área de um triângulo pode ser calculada usando a fórmula de Heron, que depende 
+                dos comprimentos dos lados e do semiperímetro do triângulo.
+                <br>- O perímetro de um triângulo é a soma dos comprimentos de seus três lados.<br>
+                <br><img src="IMGS/triangulo-perimetro-area.webp" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Classificação por Ângulos:</span><br>
+                <br>- Triângulos podem ser classificados de acordo com a medida de seus ângulos. 
+                Um triângulo agudo tem todos os ângulos agudos (menos de 90 graus), um triângulo 
+                obtuso tem um ângulo obtuso (mais de 90 graus), e um triângulo reto tem um ângulo 
+                reto (90 graus).<br>
+                <br><img src="IMGS/triangulo-ag-ob-re.jpg" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Teorema de Pitágoras:</span><br>
+                <br>- O teorema de Pitágoras é aplicável a triângulos retos, onde a soma dos 
+                quadrados das medidas dos catetos é igual ao quadrado da medida da hipotenusa.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Altura e Mediana:</span><br>
+                <br>- A altura de um triângulo é uma linha que parte de um vértice e é 
+                perpendicular ao lado oposto.
+                <br>- A mediana de um triângulo é uma linha que liga um vértice ao 
+                ponto médio do lado oposto.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Triângulos Especiais:</span><br>
+                <br>- Triângulos equiláteros têm todos os lados e ângulos iguais. 
+                Cada ângulo interno mede 60 graus.<br>
+                <br><img src="IMGS/triangulo-equilatero.jpg" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                <br>- Triângulos isósceles têm dois lados e ângulos iguais. 
+                O terceiro ângulo é diferente.<br>
+                <br><img src="IMGS/triangulo-isosceles.jpg" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                <br>- Triângulos retângulos têm um ângulo reto e seguem o teorema de Pitágoras.<br>
+                <br><img src="IMGS/triangulo-retangulo.png" alt="" class="" style="width: 350px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="textc">
+                <br><span>Aplicações Práticas:</span><br>
+                <br>- Triângulos são comuns em arquitetura, engenharia, física e design. Eles são 
+                usados em cálculos de distância, medidas de altura, ângulos de inclinação e muitas 
+                outras aplicações práticas.<br><br>
+            </div>
+
+        </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Triângulo!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> b . h / 2 </span></h2>
+
+    </header>
+
+        <section method="post" class="triangulo">
+
+            <div class="base">
+                <label for="base" class="section-label">Base :</label>
+                <input type="number" class="section-control" id="base" name="base" placeholder="" value="" required>
+            </div>
+
+            <div class="altura">
+                <label for="altura" class="section-label">Altura :</label>
+                <input type="number" class="section-control" id="altura" name="altura" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var base = document.getElementById("base").value;
+                    var altura = document.getElementById("altura").value;
+                    var area = (base * altura) / 2;
+                    document.getElementById("result").innerHTML = "A área do triângulo é: " + area;
+
+                }); 
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

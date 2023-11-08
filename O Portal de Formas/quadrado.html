@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/quadrado.css">
+        <title>Cálculo - Quadrado</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">QUADRADO</h1></a>
+
+        <div class="text-box">
+
+            <div class="text">
+                <br>Um quadrado é uma figura geométrica que possui características distintivas e 
+                propriedades específicas, incluindo:<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Definição e Elementos Principais:</span><br>
+                <br>- Um quadrado é uma forma plana com quatro lados iguais e quatro ângulos 
+                retos (90 graus).
+                <br>- Os lados opostos de um quadrado são paralelos e têm a mesma medida de comprimento.
+                <br>- Os quatro ângulos do quadrado medem todos 90 graus, tornando-o um quadrilátero regular.<br>
+                <br><img src="IMGS/quadrado.webp" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Propriedades Básicas:</span><br>
+                <br>- A medida de cada ângulo interno do quadrado é de 90 graus.
+                <br>- Os quatro lados têm o mesmo comprimento, o que é chamado de medida do lado do quadrado.
+                <br>- A soma dos ângulos internos de um quadrado é sempre 360 graus.
+                <br>- O quadrado é um caso especial do retângulo, onde todos os ângulos são retos e os lados 
+                são de igual comprimento.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Área e Perímetro:</span><br>
+                <br>- A área de um quadrado é calculada multiplicando o comprimento de um lado por ele mesmo 
+                (A = L²), onde A é a área e L é a medida do lado.
+                <br>- O perímetro de um quadrado é a soma dos comprimentos dos quatro lados, o que é dado por 
+                P = 4L, onde P é o perímetro e L é a medida do lado.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Diagonais:</span><br>
+                <br>- Um quadrado possui duas diagonais que conectam os cantos opostos.
+                <br> - As diagonais de um quadrado têm a mesma medida de comprimento e 
+                dividem o quadrado em quatro triângulos retângulos congruentes.<br>
+                <br><img src="IMGS/quadrado-diagonais.png" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Simetria:</span><br>
+                <br>- Um quadrado é uma figura simétrica, o que significa que pode ser 
+                dividido em metades iguais que se encaixam perfeitamente uma na outra.
+                <br>- Possui quatro eixos de simetria, um ao longo de cada lado e duas diagonais.<br>
+                <br><img src="IMGS/quadrdao-simetria.jpg" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Usos Práticos:</span><br>
+                <br> - Quadrados são amplamente utilizados na arquitetura, engenharia e design 
+                devido à sua regularidade e facilidade de construção.
+                <br>- Azulejos, pisos, janelas e muitos outros elementos da construção podem 
+                ser baseados na forma quadrada.<br><br>
+            </div>
+
+            <div class="textc">
+                <br><span>Relações com Outras Figuras Geométricas:</span><br>
+                <br>- Um quadrado pode ser considerado um tipo especial de retângulo, onde 
+                todos os ângulos são retos, ou um tipo especial de losango, onde todos os lados 
+                são iguais.<br><br>
+            </div>
+
+        </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Quadrado!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> L² </span></h2>
+
+    </header>
+
+        <section method="post" class="quadrado">
+            
+            <div class="lado">
+                <label for="lado" class="section-label">Lado :</label>
+                <input type="number" class="section-control" id="lado" name="lado" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+                    
+                    event.preventDefault ();
+                    var lado = document.getElementById("lado").value;
+                    var area = lado * lado;
+                    document.getElementById("result").innerHTML = "A área do quadrado é: " + area;
+
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

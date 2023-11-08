@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300&display=swap');
+
+* {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: .2s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+header {
+    text-align: center;
+    margin: 40px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.text-box {
+    width: 75%;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    margin-left: 13%;
+}
+
+.text span {
+    font-weight: 600;
+    float: left;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 18px;
+    margin-top: 60px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.textc span {
+    font-weight: 600;
+    float: left;
+}
+
+.textc {
+    font-weight: 500;
+    font-size: 25px;
+    padding: 18px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+h2 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.bor {
+    border-bottom: 3px solid rgb(189, 189, 189);
+    margin-bottom: 60px;
+}
+
+/* CALCULADORA */
+
+section .submit .result {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35%;
+    margin-top: 68px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section .angulo, .raio {
+    margin: 6px;
+    margin-top: 75px;
+}
+
+.section-label {
+    margin-left: 35%;
+    font-size: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.angulo {
+    margin-top: 68px;
+    margin-bottom: 13px;
+}
+
+.raio {
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+#angulo {
+    width: 240px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 16px;
+    text-indent: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#raio {
+    width: 240px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 16px;
+    text-indent: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#btncalc {
+    font-size: 25px;
+    margin-left: 31.6%;
+    margin-top: 40px;
+    color: white;
+    padding: 10px;
+    width: 500px;
+    cursor: pointer; 
+    border-radius: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-color: rgb(189, 189, 189);
+    background-color: rgb(189, 189, 189);
+}
+
+#btncalc:hover {
+    transition: .3s;
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+
+.result {
+    text-align: center;
+}
+
+#result {
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* VOLTAR AO TOPO */
+
+#voltar-topo {
+    text-decoration: none;
+    color: white;
+    background: rgb(189, 189, 189);
+    padding: 10px;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+    border-radius: 14px;
+}
+
+.arrow {
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    background-color: rgb(189, 189, 189);
+    color: white;
+    font-weight: bolder;
+    margin-top: 104px;
+    padding: 40px;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .list {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+footer .list {
+    color: black;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+footer .list a:hover {
+    color: black;
+}
+
+footer ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.p_ué {
+    font-size: 28px;
+    margin-bottom: 16px;
+}

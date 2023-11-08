@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/coroadocirculo.css">
+        <title>Cálculo - Coroa do Círculo</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">COROA DO CÍRCULO</h1></a>
+
+            <div class="text-box">
+
+                <div class="text">
+                    <br>Uma coroa de círculo, também conhecida como anel, é uma figura geométrica 
+                    que pode ser descrita da seguinte maneira:<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Definição:</span><br>
+                    <br>- A coroa de círculo é uma figura que se assemelha a um anel ou uma rosquinha, 
+                    consistindo em dois círculos concêntricos (círculos com o mesmo centro) com raios 
+                    diferentes. Ela é formada pela região entre os dois círculos.<br>
+                    <br><img src="IMGS/corora-circular.png" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Elementos Principais:</span><br>
+                    <br>- A coroa de círculo tem dois raios, um raio externo (maior) e um raio interno (menor).
+                    <br>- O centro da coroa de círculo é o mesmo centro de ambos os círculos concêntricos.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Propriedades Básicas:</span><br>
+                    <br>- O raio externo define a distância do centro da coroa de círculo até a borda externa, 
+                    enquanto o raio interno define a distância do centro à borda interna.
+                    <br>- A largura da coroa de círculo é a diferença entre o raio externo e o raio interno.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Área da Coroa de Círculo:</span><br>
+                    <br>- Para calcular a área da coroa de círculo, você pode subtrair a área do círculo 
+                    interno da área do círculo externo. A fórmula para a área da coroa de círculo é 
+                    A = π(R² - r²), onde A é a área, R é o raio externo e r é o raio interno.<br>
+                    <br><img src="IMGS/coroa-area.jpg" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Perímetro da Coroa de Círculo:</span><br>
+                    <br>- O perímetro da coroa de círculo é a soma das circunferências dos dois 
+                    círculos, ou seja, 2πR + 2πr.<br><br>
+                </div>
+
+                <div class="textc">
+                    <br><span>Usos Práticos:</span><br>
+                    <br>- Coroas de círculo são frequentemente usadas em design, joalheria, arquitetura 
+                    e engenharia para criar formas anelares e objetos com anéis concêntricos. 
+                    Por exemplo, anéis, engrenagens, rodas de engrenagens e projetos decorativos podem 
+                    envolver coroas de círculo.<br>
+                    <br><img src="IMGS/coroa-exemplo.webp" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+            </div>  
+            
+            <div class="bor"></div>
+
+        <h1>Calculadora Área da Coroa do Círculo!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> A - a </span></h2>
+
+    </header>
+
+        <section method="post" class="coroadc">
+
+            <div class="AREA">
+                <label for="AREA" class="section-label">Área maior :</label>
+                <input type="number" class="section-control" id="AREA" name="AREA" placeholder="" value="" required>
+            </div>
+
+            <div class="area">
+                <label for="area" class="section-label">Área menor :</label>
+                <input type="number" class="section-control" id="area" name="area" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var AREA = document.getElementById("AREA").value;
+                    var area = document.getElementById("area").value;
+                    var area_coroa = AREA - area;
+                    document.getElementById("result").innerHTML = "A área da coroa do círculo é: " + area_coroa;
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

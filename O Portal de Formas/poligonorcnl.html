@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/poligonorcnl.css">
+        <title>Cálculo - Polígono Regular com N lados</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">POLÍGONO REGULAR COM N LADOS</h1></a>
+
+            <div class="text-box">
+
+                <div class="text">
+                    <br>Um polígono regular com n lados é uma figura geométrica plana que possui n lados 
+                    de igual comprimento e n ângulos internos congruentes. As informações detalhadas 
+                    sobre polígonos regulares com n lados incluem:<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Definição:</span><br>
+                    <br>- Um polígono regular com n lados é uma figura composta por n segmentos de linha 
+                    (lados) que formam uma figura fechada com n ângulos internos congruentes.<br>
+                    <br><img src="IMGS/poligono-de-n-lados.webp" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Elementos Principais:</span><br>
+                    <br>- Os lados de um polígono regular têm todos o mesmo comprimento.
+                    <br>- Os ângulos internos do polígono regular são todos iguais.
+                    <br>- Os vértices são os pontos onde os lados se encontram.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Medida dos Ângulos Internos:</span><br>
+                    <br>- A medida de cada ângulo interno de um polígono regular com n lados pode ser 
+                    calculada usando a fórmula: Medida do Ângulo Interno = (n - 2) × 180° / n, onde n 
+                    é o número de lados. Isso é derivado do fato de que a soma dos ângulos internos de 
+                    qualquer polígono é sempre 180° menos o número de lados vezes 360° dividido por n.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Perímetro:</span><br>
+                    <br>- O perímetro de um polígono regular com n lados é a soma dos comprimentos dos n lados.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Área:</span><br>
+                    <br>- A área de um polígono regular pode ser calculada de várias maneiras, dependendo 
+                    do tipo de polígono. Para um polígono regular, uma fórmula comum é: 
+                    Área = (perímetro × apotema) / 2, onde o apotema é a distância do centro do polígono 
+                    ao ponto médio de um lado.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Simetria:</span><br>
+                    <br>- Polígonos regulares têm simetria em relação a seus ângulos e lados, o que significa
+                    que podem ser divididos em metades iguais que se encaixam perfeitamente.<br>
+                    <br><img src="IMGS/poligono-simetria.webp" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Usos Práticos:</span><br>
+                    <br>- Polígonos regulares comuns incluem o triângulo equilátero (n=3), o quadrado (n=4), 
+                    o pentágono (n=5), o hexágono (n=6) e assim por diante. Eles são frequentemente 
+                    encontrados em design, arquitetura e geometria.<br><br>
+                </div>
+
+                <div class="textc">
+                    <br><span>Polígonos Estrelados:</span><br>
+                    <br>- Além dos polígonos regulares simples, também existem polígonos estrelados regulares, 
+                    que têm ângulos internos e lados congruentes, mas apresentam um padrão de estrela em 
+                    sua forma.<br>
+                    <br><img src="IMGS/poligono-estrelado.webp" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+                </div>
+            
+            </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Polígono Regular com N Lados!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> P * a / 2 </span></h2>
+
+    </header>
+
+        <section>
+
+            <div class="perimetro">
+                <label for="perimetro" class="section-label">Perímetro :</label>
+                <input type="number" class="section-control" id="perimetro" name="perimetro" placeholder="" value="" required>
+            </div>
+
+            <div class="apotema">
+                <label for="apotema" class="section-label">Apótema :</label>
+                <input type="number" class="section-control" id="apotema" name="apotema" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var perimetro = document.getElementById("perimetro").value;
+                    var apotema = document.getElementById("apotema").value;
+                    var area = (perimetro * apotema) / 2;
+                    document.getElementById("result").innerHTML = "A área do polígono é: " + area;
+
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

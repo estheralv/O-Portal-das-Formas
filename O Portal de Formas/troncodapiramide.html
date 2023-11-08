@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/troncodapiramide.css">
+        <title>Cálculo - Tronco da Pirâmide</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">TRONCO DA PIRÂMIDE</h1></a>
+
+            <div class="text-box">
+
+                <div class="text">
+                    <br>Um tronco de pirâmide é uma figura geométrica tridimensional que combina 
+                    características de duas formas: uma pirâmide e um sólido parecido com um prisma. 
+                    Ele é definido pelas seguintes características:<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Definição:</span><br>
+                    <br>- Um tronco de pirâmide é um sólido que tem duas bases paralelas que são polígonos 
+                    congruentes, ou seja, polígonos com os mesmos lados e ângulos, mas não necessariamente
+                    do mesmo tamanho.
+                    <br>- Os outros lados do tronco de pirâmide são formados por faces laterais que 
+                    conectam as bordas correspondentes das bases.<br>
+                    <br><img src="IMGS/tronco-da-piramide.webp" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Elementos Principais:</span><br>
+                    <br>- As bases do tronco de pirâmide são polígonos com o mesmo número de lados, mas um 
+                    deles é maior que o outro.
+                    <br>- A altura do tronco de pirâmide é a distância entre as bases paralelas, medida 
+                    ao longo de uma linha perpendicular a elas.
+                    <br>- A aresta é um dos segmentos de linha que forma o contorno do tronco de pirâmide.
+                    <br>- O vértice é o ponto onde as arestas se encontram.<br>
+                    <br><img src="IMGS/tronco-caracteristicaas.webp" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Área Superficial do Tronco de Pirâmide:</span><br>
+                    <br>- Para calcular a área superficial de um tronco de pirâmide, você pode somar a área
+                    das duas bases, a área das faces laterais e a área da superfície superior. A fórmula 
+                    é A = (1/2)B₁ + (1/2)B₂ + L, onde A é a área superficial, B₁ é a área da base menor, 
+                    B₂ é a área da base maior e L é a área das faces laterais.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Volume do Tronco de Pirâmide:</span><br>
+                    <br>- O volume de um tronco de pirâmide pode ser calculado multiplicando a média das 
+                    áreas das bases pelas alturas. A fórmula é V = (1/3)h(B₁ + B₂), onde V é o volume, 
+                    B₁ é a área da base menor, B₂ é a área da base maior e h é a altura.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Usos Práticos:</span><br>
+                    <br>- Troncos de pirâmide são comuns em arquitetura e design de objetos tridimensionais, 
+                    como vasos, objetos de decoração e edifícios com telhados de formato piramidal.<br><br>
+                </div>
+
+                <div class="textc">
+                    <br><span>Relações com Outros Sólidos:</span><br>
+                    <br>- Um tronco de pirâmide se assemelha a uma pirâmide, mas com uma base maior e uma 
+                    altura mais curta. Também é semelhante a um prisma, mas com as bases em forma de 
+                    polígonos.<br><br>
+                </div>
+
+            </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Tronco da Pirâmide!</h1>
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> A1 + A2 + AI</span></h2>
+
+    </header>
+
+        <section method="post" class="troncodp">
+
+            <div class="area1">
+                <label for="area1" class="section-label">Área da base maior :</label>
+                <input type="number" class="section-control" id="area1" name="area1" placeholder="" value="" required>
+            </div>
+
+            <div class="area2">
+                <label for="area2" class="section-label">Área da base menor :</label>
+                <input type="number" class="section-control" id="area2" name="area2" placeholder="" value="" required>
+            </div>
+
+            <div class="area3">
+                <label for="area3" class="section-label">Área lateral :</label>
+                <input type="number" class="section-control" id="area3" name="area3" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var area01 = document.getElementById("area1").value;
+                    area01 = Number(area01);
+                    var area02 = document.getElementById("area2").value;
+                    area02 = Number(area02);
+                    var area03 = document.getElementById("area3").value;
+                    area03 = Number(area03);
+                    var AREA = area01 + area02 + area03;
+                    AREA = Number(AREA);
+                    document.getElementById("result").innerHTML = "A área do tronco da pirâmide é: " + AREA
+
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

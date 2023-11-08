@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/retangulo.css">
+        <title>Cálculo - Quadrado</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">RETÂNGULO</h1></a>
+
+        <div class="text-box">
+
+            <div class="text">
+                <br>Um retângulo é uma figura geométrica que possui propriedades distintas e 
+                características específicas, incluindo:<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Definição e Elementos Principais:</span><br>
+                <br>- Um retângulo é uma figura plana que possui quatro lados, quatro ângulos 
+                retos (90 graus) e lados opostos paralelos de igual comprimento.
+                <br>- Os ângulos retos em um retângulo são característicos, o que significa 
+                que todos os ângulos internos medem 90 graus.<br>
+                <br><img src="IMGS/retangulo90graus.png" alt="" class="" style="width: 350px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Propriedades Básicas:</span><br>
+                <br>- O retângulo é um caso especial do paralelogramo, onde todos os ângulos são retos.
+                <br>- Os lados opostos de um retângulo são paralelos e têm comprimentos iguais.
+                <br>- A soma dos ângulos internos de um retângulo é sempre 360 graus.
+                <br>- A diagonal de um retângulo divide-o em dois triângulos retângulos congruentes.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Área e Perímetro:</span><br>
+                <br>- A área de um retângulo é calculada multiplicando o comprimento de um lado pela 
+                medida do outro lado (A = comprimento x largura), onde A é a área, comprimento é a 
+                medida de um lado e largura é a medida do lado oposto.
+                <br>- O perímetro de um retângulo é a soma das medidas dos quatro lados, o que é dado 
+                por P = 2(comprimento + largura), onde P é o perímetro.<br>
+                <br><img src="IMGS/retangulo-area-perimetro.png" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Diagonais:</span><br>
+                <br>- Um retângulo possui duas diagonais que são perpendiculares entre si.
+                <br>- As diagonais de um retângulo são de igual comprimento, e cada uma 
+                divide o retângulo em dois triângulos retângulos congruentes.<br>
+                <br><img src="IMGS/retangulo-diagonal.png" alt="" class="" style="width: 350px; border-radius: 8px;"><br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Simetria:</span><br>
+                <br>- O retângulo é uma figura simétrica, o que significa que pode ser 
+                dividido em metades iguais que se encaixam perfeitamente uma na outra.<br><br>
+            </div>
+
+            <div class="text">
+                <br><span>Usos Práticos:</span><br>
+                <br>- Retângulos são amplamente utilizados na arquitetura, engenharia e design 
+                devido à sua regularidade e facilidade de construção.
+                <br>- Portas, janelas, quadros, telas de computador e muitos outros objetos 
+                retangulares são comuns na vida cotidiana.<br><br>
+            </div>
+
+            <div class="textc">
+                <br><span>Relações com Outras Figuras Geométricas:</span><br>
+                <br>- O retângulo é um tipo especial de paralelogramo com ângulos retos, e é um 
+                caso especial do quadrilátero com todos os ângulos retos.<br>
+                <br><img src="IMGS/retangulo.webp" alt="" class="" style="width: 350px; border-radius: 8px;"><br><br>
+            </div>
+
+        </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Retângulo!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> b . h </span></h2>
+
+    </header>
+
+        <section method="post" class="retangulo">
+
+            <div class="base">
+                <label for="base" class="section-label">Base :</label>
+                <input type="number" class="section-control" id="base" name="base" placeholder="" value="" required>
+            </div>
+
+            <div class="altura">
+                <label for="altura" class="section-label">Altura :</label>
+                <input type="number" class="section-control" id="altura" name="altura" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var base = document.getElementById("base").value;
+                    var altura = document.getElementById("altura").value;
+                    var area = base * altura;
+                    document.getElementById("result").innerHTML = "A área do retângulo é: " + area;
+
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

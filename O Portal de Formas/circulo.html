@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/circulo.css">
+        <title>Cálculo - Círculo</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header> 
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">CÍRCULO</h1></a>
+
+            <div class="text-box">
+
+                <div class="text">
+                    <br>Um círculo é uma forma geométrica fundamental que é caracterizada por 
+                    uma série de propriedades específicas, veja abaixo:<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Definição e Elementos Principais:</span><br>
+                    <br>- Um círculo é uma forma plana que consiste em todos os pontos equidistantes 
+                    de um ponto central chamado centro.
+                    <br>- A distância do centro a qualquer ponto na circunferência do círculo é 
+                    chamada de raio. O raio é a medida fixa de um círculo.<br>
+                    <br><img src="IMGS/circulo-raio.png" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Propriedades Básicas:</span><br>
+                    <br>- O comprimento da linha que forma a borda do círculo é chamado de 
+                    circunferência.
+                    <br>- A fórmula para calcular a circunferência é C = 2πr, onde C é a circunferência 
+                    e r é o raio.
+                    <br>- A área dentro do círculo é chamada de área do círculo, e é calculada por 
+                    A = πr², onde A é a área e r é o raio.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Ângulos e Arcos:</span><br>
+                    <br>- Os círculos são compostos por 360 graus, e qualquer ângulo no centro do 
+                    círculo é chamado de ângulo central.
+                    <br>- A medida de um ângulo central é diretamente proporcional à medida do 
+                    arco correspondente na circunferência.
+                    <br>- Um arco de 360 graus é igual a toda a circunferência, enquanto um 
+                    arco de 180 graus é metade dela.<br>
+                    <br><img src="IMGS/circulo-angulos.png" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Secções de Círculo:</span><br>
+                    <br>- Um círculo pode ser dividido em várias seções, incluindo setores 
+                    circulares e segmentos circulares.
+                    <br>- Setores circulares são partes do círculo delimitadas por dois 
+                    raios e a circunferência.
+                    <br>- Segmentos circulares são partes do círculo delimitadas por 
+                    um arco e um segmento de reta que liga os extremos do arco.<br>
+                    <br><img src="IMGS/circulo-setor-segmento.svg" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Teorema de Pitágoras:</span><br>
+                    <br>- O teorema de Pitágoras pode ser aplicado a triângulos formados 
+                    dentro de um círculo, conhecidos como triângulos inscritos. Este teorema 
+                    estabelece uma relação entre os comprimentos dos lados de um triângulo 
+                    retângulo e pode ser útil para resolver problemas envolvendo círculos.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Usos Práticos:</span><br>
+                    <br>- Círculos são comuns na geometria, mas também têm muitas aplicações 
+                    práticas na vida cotidiana. Eles são amplamente usados em engenharia, 
+                    arquitetura, design gráfico, física, astronomia e muito mais.
+                    <br>- Exemplos de objetos baseados em círculos incluem rodas, 
+                    engrenagens, discos, pratos, moedas e muitos outros.<br><br>
+                </div>
+                
+                <div class="textc">
+                    <br><span>Equação Geral:</span><br>
+                    <br>- A equação geral de um círculo com centro (h, k) e raio r é (x - h)² 
+                    + (y - k)² = r², onde (x, y) representa as coordenadas de qualquer 
+                    ponto na circunferência.<br>
+                    <br><img src="IMGS/circulo-equacao.webp" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+            </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Círculo!</h1>
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> π . r²</span></h2>
+
+    </header>
+
+        <section method="post" class="circulo">
+
+            <form> 
+
+                <div class="pi">
+                    <p>π</p>
+                </div>
+
+                <div class="mlt">
+                    <p>.</p>
+                </div>
+
+                <div class="raio">
+                    <label for="raio" class="section-label">Raio :</label>
+                    <input type="number" class="section-control" id="raio" name="raio" placeholder="" value="" required>
+                </div>
+                
+            </form>
+
+                <div class="submit">
+                    <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+                </div>
+
+            <div class="result">
+                <h3 id="result"></h3>
+            </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var raio = document.getElementById("raio").value;
+                    var area = Math.PI * raio;
+                    document.getElementById("result").innerHTML = "A área do círculo é: " + area;
+
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

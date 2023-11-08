@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descrição muito legal aqui ó">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS's/trapezoideirregular.css">
+        <title>Cálculo - Trapezoide Irregular</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url(IMGS/bckground.jpg);
+        }
+    </style>
+
+    <header>
+
+        <a href="index.html" style="text-decoration: none; color: black;"><h1 class="title">CÍRCULO</h1></a>
+
+            <div class="text-box">
+
+                <div class="text">
+                    <br>Um trapézio irregular é uma figura geométrica plana que tem dois lados 
+                    paralelos, mas os outros dois lados não são paralelos e podem ter comprimentos 
+                    diferentes. Aqui estão detalhes sobre o trapézio irregular:<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Definição:</span><br>
+                    <br>- Um trapézio irregular é um polígono de quatro lados, com exatamente um par de 
+                    lados paralelos. Os outros dois lados não são paralelos entre si.<br>
+                    <br><img src="IMGS/trapezoide-irregular.png" alt="" class="" style="width: 250px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Elementos Principais:</span><br>
+                    <br>- Os lados paralelos do trapézio irregular são chamados de bases. Um trapézio 
+                    irregular tem uma base maior e uma base menor.
+                    <br>- Os outros dois lados, que não são paralelos entre si, são chamados de pernas. 
+                    As pernas podem ter comprimentos diferentes.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Ângulos Internos:</span><br>
+                    <br>- Os ângulos internos do trapézio irregular podem ter várias medidas, dependendo 
+                    das dimensões dos lados e da configuração específica do trapézio.
+                    <br>- Os ângulos opostos nas pernas não são necessariamente congruentes.<br>
+                    <br><img src="IMGS/trapezoide-angulos.png" alt="" class="" style="width: 500px; border-radius: 8px;"><br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Propriedades Específicas:</span><br>
+                    <br>- A soma dos ângulos internos de um trapézio irregular é sempre igual a 360 graus.
+                    <br>- As diagonais de um trapézio irregular não são necessariamente congruentes 
+                    e não se cruzam no ponto médio.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Área:</span><br>
+                    <br>- A área de um trapézio irregular pode ser calculada usando a fórmula: 
+                    Área = (base maior + base menor) * altura / 2, onde a altura é a distância entre as 
+                    bases, medida perpendicularmente.<br><br>
+                </div>
+
+                <div class="text">
+                    <br><span>Perímetro:</span><br>
+                    <br>- O perímetro de um trapézio irregular é a soma dos comprimentos de seus quatro lados.<br><br>
+                </div>
+
+                <div class="textc">
+                    <br><span>Usos Práticos:</span><br>
+                    <br>- Trapézios irregulares podem ser encontrados em vários contextos, incluindo design 
+                    gráfico, arquitetura, construção e engenharia, onde as formas das estruturas ou 
+                    objetos podem ser não convencionais.<br><br>
+                </div>
+
+            </div>
+
+        <div class="bor"></div>
+
+        <h1>Calculadora Área do Trapezoide Irregular!</h1>  
+        <h2>Usaremos a seguinte fórmula para o cálculo: <span> (B + b) * h / 2 </span></h2>
+
+    </header>
+
+        <section method="post" class="trapezoideirr">
+
+            <div class="BASE">
+                <label for="BASE" class="section-label">Base maior :</label>
+                <input type="number" class="section-control" id="BASE" name="BASE" placeholder="" value="" required>
+            </div>
+
+            <div class="base">
+                <label for="base" class="section-label">Base menor :</label>
+                <input type="number" class="section-control" id="base" name="base" placeholder="" value="" required>
+            </div>
+
+            <div class="altura">
+                <label for="altura" class="section-label">Altura :</label>
+                <input type="number" class="section-control" id="altura" name="altura" placeholder="" value="" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" class="butao" id="btncalc" value="CALCULAR">
+            </div>
+
+                <div class="result">
+                    <h3 id="result"></h3>
+                </div>
+
+        </section>
+
+        <a href="#" id="voltar-topo"><ion-icon class="arrow" name="arrow-up-outline"></ion-icon></a>
+
+            <script>
+
+                document.getElementById("btncalc").addEventListener("click", function (event) {
+
+                    event.preventDefault ();
+                    var BASE = document.getElementById("BASE").value;
+                    BASE = Number(BASE);
+                    var base = document.getElementById("base").value;
+                    base = Number(base);
+                    var altura = document.getElementById("altura").value;
+                    altura = Number(altura);
+                    var area = ((BASE + base) * altura) / 2;
+                    area = Number(area);
+                    document.getElementById("result").innerHTML = "A área do trapezoide irregular é: " + area;
+ 
+                });
+
+            </script>
+
+    <footer>
+
+        <p class="p_ué">O Portal das Formas</p>
+
+        <div class="list">
+
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
